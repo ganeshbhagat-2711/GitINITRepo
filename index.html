@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduspark International Pvt Ltd</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Header */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+.logo span{
+    color:#ff6600;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#0d6efd;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:linear-gradient(135deg,#0d6efd,#6f42c1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:14px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff6600;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#ff6600;
+}
+
+/* Section */
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    color:#0d6efd;
+}
+
+/* About */
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Courses */
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.course-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+}
+
+.course-header{
+    background:linear-gradient(135deg,#0d6efd,#6f42c1);
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+.course-body{
+    padding:25px;
+}
+
+.course-body p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.price{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff6600;
+    margin-bottom:15px;
+}
+
+.enroll-btn{
+    display:block;
+    text-align:center;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+}
+
+.enroll-btn:hover{
+    background:#084298;
+}
+
+/* Features */
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.feature h3{
+    margin:15px 0;
+    color:#0d6efd;
+}
+
+/* Contact */
+.contact{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    border-radius:20px;
+    padding:50px;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+footer{
+    text-align:center;
+    background:#111;
+    color:white;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:38px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.nav-links{
+    gap:12px;
+    font-size:14px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Edu<span>Spark</span></div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Eduspark International Pvt. Ltd.</h1>
+        <p>
+            Empowering Future Tech Leaders with Industry-Oriented
+            Training in AI, Machine Learning, Cloud Computing,
+            Cyber Security, Data Science and Emerging Technologies.
+        </p>
+
+        <a href="#courses" class="btn">Explore Courses</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about">
+        Eduspark International Pvt. Ltd. is a leading educational
+        and technology training institute dedicated to providing
+        world-class IT education. Our mission is to bridge the
+        gap between academic knowledge and industry requirements
+        through practical learning, live projects, internships,
+        and expert mentorship.
+    </div>
+</section>
+
+<!-- Courses -->
+<section id="courses">
+    <h2 class="section-title">Our Popular Courses</h2>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <div class="course-header">
+                <h3>Artificial Intelligence</h3>
+            </div>
+            <div class="course-body">
+                <p>Learn AI fundamentals, neural networks, NLP and intelligent systems.</p>
+                <div class="price">₹29,999</div>
+                <a href="#" class="enroll-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-header">
+                <h3>Machine Learning</h3>
+            </div>
+            <div class="course-body">
+                <p>Master supervised learning, deep learning and predictive analytics.</p>
+                <div class="price">₹24,999</div>
+                <a href="#" class="enroll-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-header">
+                <h3>Cloud Computing</h3>
+            </div>
+            <div class="course-body">
+                <p>AWS, Azure & Google Cloud practical training with real projects.</p>
+                <div class="price">₹19,999</div>
+                <a href="#" class="enroll-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-header">
+                <h3>Cyber Security</h3>
+            </div>
+            <div class="course-body">
+                <p>Ethical Hacking, Penetration Testing and Security Operations.</p>
+                <div class="price">₹27,999</div>
+                <a href="#" class="enroll-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-header">
+                <h3>Data Science</h3>
+            </div>
+            <div class="course-body">
+                <p>Data Analysis, Visualization, Python and Business Intelligence.</p>
+                <div class="price">₹22,999</div>
+                <a href="#" class="enroll-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-header">
+                <h3>Full Stack Development</h3>
+            </div>
+            <div class="course-body">
+                <p>Frontend + Backend development using modern technologies.</p>
+                <div class="price">₹18,999</div>
+                <a href="#" class="enroll-btn">Enroll Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Features -->
+<section id="features">
+    <h2 class="section-title">Why Choose Us?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>Industry Experts</h3>
+            <p>Learn from certified professionals and experienced trainers.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Live Projects</h3>
+            <p>Work on real-world projects and build a strong portfolio.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Certification</h3>
+            <p>Receive industry-recognized certifications after completion.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Placement Support</h3>
+            <p>Dedicated placement assistance and interview preparation.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="contact">
+        <h2>Contact Us</h2>
+
+        <p>Email: info@edusparkinternational.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Website: www.edusparkinternational.com</p>
+
+        <br>
+
+        <a href="#" class="btn">Apply Now</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Eduspark International Pvt. Ltd. | All Rights Reserved
+</footer>
+
+<script>
+
+// Navbar background effect
+window.addEventListener("scroll",()=>{
+    const header=document.querySelector("header");
+
+    if(window.scrollY>50){
+        header.style.background="#ffffff";
+    }else{
+        header.style.background="#ffffff";
+    }
+});
+
+// Enroll Button Action
+document.querySelectorAll(".enroll-btn").forEach(btn=>{
+    btn.addEventListener("click",(e)=>{
+        e.preventDefault();
+        alert("Thank you for choosing Eduspark International Pvt. Ltd. Our team will contact you soon.");
+    });
+});
+
+</script>
+
+</body>
+</html>
